@@ -7,6 +7,3 @@ This repository belongs to Team 10, consisting of the following members:
 3. Anjola Uprety
 4. Kay Smith
 5. Masi Najafizehtab
-
-
-Changed by Anjola... Testing Testing...
