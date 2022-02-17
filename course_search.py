@@ -64,6 +64,18 @@ def print_course(course):
     print(course['subject'],course['coursenum'],course['section'],
           course['name'],course['term'],course['instructor'])
 
+def print_subj_num(course): 
+    print(course['subject'],course['coursenum']) 
+    
+def print_instructor(course): 
+    print(course['instructor']) 
+
+def print_title(course): 
+    print(course['title'])     
+
+def print_description(course): 
+    print(course['description'])     
+
 if __name__ == '__main__':
     topmenu()
 

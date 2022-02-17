@@ -49,4 +49,28 @@ class Schedule():
         else:
             print("can't sort by "+str(field)+" yet")
             return self
+    
+    def title(self,phrase): 
+        ''' get the title for course if keyword in it '''
+        return Schedule([course for course in self.courses] if phrase in 'title')
+    
+    def description(self,phrase):
+        ''' get the description for course if keyword in it '''
+        return Schedule([course for course in self.courses] if phrase in 'details')
+    
+    def class_day(self,weekday): 
+        ''' find day that class is running '''
+        return Schedule([course for course in self.courses] if weekday in 'times')
+    
+    def status(self,status): 
+        ''' see which classes are still open or close '''
+        return Schedule([course for course in self.courses] if status=='status_text')
+    
+
+ 
+
+
+
+
+
  
