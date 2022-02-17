@@ -66,7 +66,10 @@ class Schedule():
         ''' see which classes are still open or close '''
         return Schedule([course for course in self.courses] if status=='status_text')
     
-
+    def section(self,section):
+        ''' subject filters the courses by subject '''
+        return Schedule([course for course in self.courses if course['section'] in section])
+    
  
 
 
