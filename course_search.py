@@ -59,10 +59,6 @@ def topmenu():
         elif command in ['e','email']: 
             email = input("enter a email:")
             schedule = schedule.email(email).sort('subject')
-
-
-
-
         else:
             print('command',command,'is not supported')
             continue
