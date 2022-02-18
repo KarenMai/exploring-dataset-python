@@ -56,6 +56,11 @@ def topmenu():
         elif command in ['tim', 'time']:
             weekday = (input("enter an day:"))
             schedule = schedule.class_day(weekday).sort('subject')
+        elif command in ['e','email']: 
+            email = input("enter a email:")
+            schedule = schedule.email(email).sort('subject')
+
+
 
 
         else:
