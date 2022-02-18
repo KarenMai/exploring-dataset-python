@@ -83,5 +83,3 @@ def print_course(course):
 
 if __name__ == '__main__':
     topmenu()
-
-# Gillian's comment for github - changes
