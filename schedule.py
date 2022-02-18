@@ -48,8 +48,8 @@ class Schedule():
         return Schedule([course for course in self.courses if phrase in course['description']])
     def class_day(self,weekday):
         ''' find day that class is running '''
-        non_empty = []
+        n_empty = []
         for course in self.courses:
             if len(course['times']) != 0:
-                non_empty.append(course)
-        return Schedule([course for course in non_empty if weekday in course['times'][0]['days'][0]])
+                n_empty.append(course)
+        return Schedule([course for course in n_empty if weekday in course['times'][0]['days'][0]])
